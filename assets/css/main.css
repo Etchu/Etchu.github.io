@@ -2593,7 +2593,7 @@ input, select, textarea {
 
 		ul.major-icons li {
 			display: inline-block;
-			padding: 2.5em;
+			padding: 1.5em 2.5em;
 			text-align: center;
 		}
 
@@ -3529,4 +3529,63 @@ input, select, textarea {
 				padding: 2em 1em 2em 1em ;
 			}
 
+	}
+
+/*Graph CSS*/
+	.graph {
+		height: 10px;
+		width: 165px;
+		background: #ccc;
+		border-radius: 5px;
+		margin: 30px 0 0 0;
+	}
+	.graph span {
+		display: block;
+		padding: 0 10px;
+		height: 10px;
+		line-height: 40px;
+		text-align: right;
+		border-radius: 5px;
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 600;
+	}
+
+	.graph.stack1 span{ background: #6DB33F; color: #6DB33F; border-right: 1px solid #578f32; animation: stack1 2s 1;}
+	.graph.stack2 span{ background: #007396; color: #0090bc; animation: stack1 2s 1;}
+	.graph.stack3 span{ background: #F7DF1E; color: #F7DF1E; border-right: 1px solid #d6bf08; animation: stack1 2s 1;}
+	.graph.stack4 span{ background: #1572B6; color: #1572B6; animation: stack1 2s 1;}
+	.graph.stack5 span{ background: #4479A1; color: #4479A1; animation: stack1 2s 1;}
+	.graph.stack6 span{ background: #181717; animation: stack1 2s 1;}
+
+	@keyframes stack1 {
+		0% { width: 0; color: rgba(255, 255, 255, 0); }
+		40% { width: 0; color: rgba(255, 255, 255, 1); }
+		100% { width: 60%; }
+	}
+	@keyframes stack2 {
+		0% { width: 0; color: rgba(255, 255, 255, 0); }
+		40% { width: 0; color: rgba(255, 255, 255, 1); }
+		100% { width: 45%; }
+	}
+	@keyframes stack3 {
+		0% { width: 0; color: rgba(255, 255, 255, 0); }
+		40% { width: 0; color: rgba(255, 255, 255, 1); }
+		100% { width: 45%; }
+	}
+	@keyframes stack4 {
+		0% { width: 0; color: rgba(255, 255, 255, 0); }
+		40% { width: 0; color: rgba(255, 255, 255, 1); }
+		100% { width: 40%; }
+	}
+	@keyframes stack5 {
+		0% { width: 0; color: rgba(255, 255, 255, 0); }
+		40% { width: 0; color: rgba(255, 255, 255, 1); }
+		100% { width: 45%; }
+	}
+	@keyframes stack6 {
+		0% { width: 0; color: rgba(255, 255, 255, 0); }
+		40% { width: 0; color: rgba(255, 255, 255, 1); }
+		100% { width: 40%; }
 	}
